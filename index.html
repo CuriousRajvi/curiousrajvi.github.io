@@ -1,0 +1,214 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d29698ce59.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                  <a href="#header"><img src="Images/logo.png" class="logo"></a>
+                     <ul id="sidemenu">
+                       <li><a href="#header">Home</a></li>
+                       <li><a href="#interests">Skills</a></li>
+                       <li><a href="#portfolio">Projects</a></li>
+                       <li><a href="#achievements">Achievements</a></li>
+                       <li><a href="#contact">Contact</a></li>
+                      <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                   </ul>
+                   <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                 </nav>
+                 <div class="header-text">
+                   <p>Software Developer</p>
+                   <h1> Hi, I'm <br/>Curious <span>Rajvi</span> </h1>
+                 </div>
+             </div>
+        </div>  
+        <!--------about------------>
+             <div id="interests">
+                <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/img2.jpg">
+                    </div>
+                    <!---about me-->
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            I am a visionary computer science student driven by passion for innovation. </p>
+                        <p>
+                            I believe that technology has the power to solve most of the world's most pressing challenges, and I'm eager to play my part in making a difference.
+                           </p> 
+                           
+                            
+                        </p>
+                        <!---links-->
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        </div>
+                        <!--Skills-->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Android Development</span><br>Building android apps</li>
+                                <li><span>Python</span><br>Automating existing application</li>
+                                <li><span>Software Development</span><br>Developing software - backend</li>
+                                <li><span>Machine Learning</span><br>Applying machine learning algorithms in projects</li>
+                            </ul>
+                        </div>
+                        <!--Education-->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - Current</span><br>B.Tech in computer science from Nirma university Ahmedabad</li>
+                                <li><span>2018 - 2021</span><br>Diploma in Computer Engineering from AVPTI Rajkot</li>
+                            </ul>
+                        </div>
+                        <!--Experience-->
+                          <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>July 2022 - August 2022</span><br>Data Science Intern at The Sparks Foundation</li>
+                                <li><span>June 2022 - July 2022</span><br>Volunteer at Robinhood Army</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!----portfolio-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list-1">
+                    <div class="work">
+                        <img src="images/banner.jpg">
+                        <div class="layer">
+                            <h3>Wise Website</h3>
+                            <p><h4>A project focused on women empowerment by providing guidance regarding relevant opportunities</h4></p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/gesture.jpg">
+                        <div class="layer">
+                            <h3>Pysanket</h3>
+                            <p><h4>Solution for Gesture enabled commands for operating Laptops/PCs for frequently used operations on daily basis.</h4></p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/pro1.png">
+                        <div class="layer">
+                            <h3>Dynamic Memory Management</h3>
+                            <p><h4>Console-based implementation for first fit, next fit, worst fit and best fit algorithms using python.</h4></p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <!----achievements-->
+        <div id="achievements">
+            <div class="container">
+                <h1 class="sub-title">Achievements</h1>
+                <div class="work-list-2">
+                    <div class="work">
+                        <img src="images/diploma_rank.jpg">
+                        <div class="layer">
+                            <h2>4th rank in diploma collegefor academic excellence</h2>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="work">
+                        <img src="images/group_singing.jpg">
+                        <div class="layer">
+                            <h3>Group Singing winner</h3>
+                      
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <!--------------contact------------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rajvidesai12@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>8866225166</p>
+                         <div class="social-icons">
+                            <a href="https://twitter.com/CuriousRajvi"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://instagram.com/curiousrajvi"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/rajvidesai12/"><i class="fa-brands fa-linkedin"></i></a> 
+                        </div>
+                        <a href="#" class="btn btn2" download>Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required >
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; Rajvi. Made with <i class="fa-solid fa-heart"></i> by Rajvi Desai  </p>
+            </div>
+        </div>
+        <script>
+            var tablinks= document.getElementsByClassName("tab-links");
+            var tabcontents= document.getElementsByClassName("tab-contents");
+
+            function openTab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-180px";
+            }
+        </script>
+        
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzO2g_r8s2ftf9JAbu3_8d1wqHFTOQnXM9qKjJt2jVVPt9MTb04f0UYJYxK2XghQnyt/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => { 
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            }, 5000)
+            form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
